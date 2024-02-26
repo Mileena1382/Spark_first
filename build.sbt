@@ -12,3 +12,4 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-sql" % sparkVersion
 )
+libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.28"
