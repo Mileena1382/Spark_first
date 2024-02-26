@@ -17,7 +17,10 @@ object CSVcount {
     val df = spark.read.option("header", "true").csv("data/business.csv")
 
     // Specify the word to count its frequency
-    val wordToCount = "57"
+//    val wordToCount = "1410"
+
+    println("Enter the word to count:")
+    val wordToCount=scala.io.StdIn.readLine()
 
     // Filter the DataFrame for the specified word
     val wordFrequency = df
